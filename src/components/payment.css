@@ -1,0 +1,120 @@
+.payment-page {
+  width: 100%;
+  height: calc(100vh - 6rem);
+
+  padding: 6rem 12rem;
+  position: relative;
+}
+.payment-container {
+  width: 100%;
+}
+.payment-options {
+  width: 100%;
+
+  background: #fff;
+  padding: 2rem;
+  height: max-content;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 24%);
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+.payment-option-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.payment {
+  padding: 2rem;
+  background: white;
+  display: flex;
+  width: max-content;
+  margin: 3rem;
+  align-items: center;
+  box-shadow: 0 0.5rem 1rem #00000034;
+  border-radius: 4rem;
+  border: 1px solid #0000000c;
+}
+.payment > * {
+  margin: 0 1rem;
+}
+.payment svg {
+  color: #b3e140;
+  font-size: 4rem;
+}
+.payment label {
+  font-size: 1.4rem;
+}
+
+input[type='radio' i] {
+  cursor: pointer;
+}
+.payment-details {
+  background: #fff;
+  height: max-content;
+  padding: 2rem;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 24%);
+  border-radius: 2rem;
+  width: 100%;
+}
+.payment-details h2 {
+  font-size: 2rem;
+}
+.payment-details p {
+  font-size: 1.3rem;
+}
+.payment-details span {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.confirm-btn {
+  background: #b3e140;
+  border-radius: 1.5rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+
+@media (max-width: 960px) {
+  .payment {
+    padding: 1rem;
+
+    margin: 1.5rem;
+  }
+  .payment-page {
+    padding: 4rem 4rem;
+  }
+}
+@media (max-width: 560px) {
+  .payment-page {
+    padding: 2rem 2rem;
+  }
+  .payment svg {
+    font-size: 2rem;
+  }
+  .payment {
+    padding: 1rem;
+    background: white;
+    display: flex;
+    width: 100%;
+    margin: 1rem;
+    align-items: center;
+    box-shadow: 0 0.2rem 0.2rem #00000020;
+    border-radius: 4rem;
+    border: 1px solid #0000000c;
+    justify-content: space-between;
+  }
+  .payment label {
+    font-size: 1.2rem;
+  }
+  .payment-options h1,
+  .payment-details h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .payment-details p {
+    margin: 5px 0;
+  }
+}

@@ -1,0 +1,39 @@
+.cartpage {
+  width: 100%;
+  height: calc(100vh - 9rem);
+
+  padding: 0 12rem;
+  overflow-y: scroll;
+}
+.cartpage::-webkit-scrollbar {
+  display: none;
+}
+
+.total-price {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #181a13;
+  margin-right: 1rem;
+  display: flex;
+}
+.checkout-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.checkout-btn p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* *******************media queries************* */
+@media (max-width: 1024px) {
+  .cartpage {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 650px) {
+  .cartpage {
+    padding: 0 0.5rem;
+  }
+}

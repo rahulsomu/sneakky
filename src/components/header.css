@@ -1,0 +1,113 @@
+.header {
+  height: 6rem;
+  position: sticky;
+  top: 0;
+  z-index: 999999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 12rem;
+  overflow: hidden;
+}
+.header-right {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.header-right > * {
+  margin: 0 1rem;
+}
+.message {
+  position: absolute;
+  right: -50rem;
+  background: rgb(255, 255, 255);
+  padding: 1rem 8rem;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 0.5rem #8dc100;
+  color: #b3e140;
+  font-weight: 700;
+  animation: slide 3s ease-in-out infinite;
+}
+@keyframes slide {
+  20% {
+    right: 1rem;
+  }
+  80% {
+    right: 1rem;
+  }
+}
+.logo {
+  height: 5rem;
+  cursor: pointer;
+}
+.logo img {
+  height: 100%;
+}
+.login {
+  background: #191b16;
+  padding: 0.7rem 3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.login p {
+  color: #fff;
+
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.cart svg {
+  font-size: 2.5rem;
+  color: black;
+}
+.cart {
+  position: relative;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.cart-count {
+  position: absolute;
+  color: #000;
+  font-weight: 700;
+  background: white;
+  border: 2px solid #b3e140;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 2rem;
+  top: -1rem;
+  right: -7px;
+  display: grid;
+  place-items: center;
+}
+
+/* *****************media queries********************** */
+
+@media (max-width: 630px) {
+  .header {
+    padding: 1rem 8rem;
+  }
+  .message {
+    padding: 1rem 3rem;
+  }
+
+  .message p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 456px) {
+  .header {
+    padding: 1rem 5rem;
+  }
+}
+@media (max-width: 375px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+  .login {
+    background: #191b16;
+    padding: 0.7rem 2rem;
+  }
+}

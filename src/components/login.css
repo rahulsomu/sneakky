@@ -1,0 +1,74 @@
+.login-page {
+  display: grid;
+  place-items: center;
+  height: calc(100vh - 6rem);
+}
+.login-container {
+  background: #b3e140;
+  min-width: 50rem;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0.2rem 1rem rgba(34, 34, 34, 0.116);
+  border-radius: 1rem;
+  align-items: center;
+  padding: 3rem;
+}
+.login-img {
+  width: 20rem;
+  height: 20rem;
+}
+.login-img img {
+  width: 100%;
+  object-fit: cover;
+}
+.form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+input[type='email'],
+input[type='password'],
+input[type='text'] {
+  background: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  height: 4rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  padding: 0 2rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  box-shadow: 0 0.2rem 1rem rgba(34, 34, 34, 0.116);
+}
+/* input[type=email]:focus,input[type=password]:focus{
+   height: 5rem;
+} */
+.submit {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  height: 4rem;
+  background: #000;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0.6rem 1rem rgba(34, 34, 34, 0.171);
+}
+.submit:disabled {
+  background: rgb(219, 219, 219);
+  cursor: not-allowed;
+}
+.submit a {
+  color: white;
+}
+.error {
+  color: rgb(209, 26, 26);
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
