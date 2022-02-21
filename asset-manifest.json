@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/sneakky/static/css/main.041d8ac2.chunk.css",
-    "main.js": "/sneakky/static/js/main.4b013659.chunk.js",
-    "main.js.map": "/sneakky/static/js/main.4b013659.chunk.js.map",
+    "main.css": "/sneakky/static/css/main.33efe4b6.chunk.css",
+    "main.js": "/sneakky/static/js/main.b614186b.chunk.js",
+    "main.js.map": "/sneakky/static/js/main.b614186b.chunk.js.map",
     "runtime-main.js": "/sneakky/static/js/runtime-main.25fa4890.js",
     "runtime-main.js.map": "/sneakky/static/js/runtime-main.25fa4890.js.map",
     "static/js/2.e51e273c.chunk.js": "/sneakky/static/js/2.e51e273c.chunk.js",
     "static/js/2.e51e273c.chunk.js.map": "/sneakky/static/js/2.e51e273c.chunk.js.map",
     "index.html": "/sneakky/index.html",
-    "static/css/main.041d8ac2.chunk.css.map": "/sneakky/static/css/main.041d8ac2.chunk.css.map",
+    "static/css/main.33efe4b6.chunk.css.map": "/sneakky/static/css/main.33efe4b6.chunk.css.map",
     "static/js/2.e51e273c.chunk.js.LICENSE.txt": "/sneakky/static/js/2.e51e273c.chunk.js.LICENSE.txt",
-    "static/media/check.b69df771.mp4": "/sneakky/static/media/check.b69df771.mp4"
+    "static/media/check.b69df771.mp4": "/sneakky/static/media/check.b69df771.mp4",
+    "static/media/shoe.337cf8ca.jpg": "/sneakky/static/media/shoe.337cf8ca.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.25fa4890.js",
     "static/js/2.e51e273c.chunk.js",
-    "static/css/main.041d8ac2.chunk.css",
-    "static/js/main.4b013659.chunk.js"
+    "static/css/main.33efe4b6.chunk.css",
+    "static/js/main.b614186b.chunk.js"
   ]
 }
