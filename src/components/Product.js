@@ -4,6 +4,7 @@ import { useContext } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { checkoutActions, successMsgActions } from '../actions/index';
 import DeleteIcon from '@material-ui/icons/Delete';
+import shoeImage from '../assets/shoe.jpg';
 
 const Product = () => {
   const dispatch = useDispatch();
@@ -40,7 +41,7 @@ const Product = () => {
       </div>
       <div className="product-left">
         <div className="product-img">
-          <img src="shoe.jpg" alt="" />
+          <img src={shoeImage} alt="" />
         </div>
         <div className="order-info">
           <p className="info-name">{details.name}</p>
@@ -70,28 +71,32 @@ const Product = () => {
               +
             </button>
           </div>
-          <div className="sizes">
-            {sizes.map((size, index) => {
-              return (
-                <button
-                  key={index}
-                  className="size"
-                  style={
-                    selectedSize == size
-                      ? { background: '#B3E140' }
-                      : { background: 'white' }
-                  }
-                  onClick={selectSize}
-                >
-                  {size}
-                </button>
-              );
-            })}
+          <div>
+            <div className="sizes">
+              {sizes.map((size, index) => {
+                return (
+                  <button
+                    key={index}
+                    className="size"
+                    style={
+                      selectedSize == size
+                        ? { background: '#B3E140' }
+                        : { background: 'white' }
+                    }
+                    onClick={selectSize}
+                  >
+                    {size}
+                  </button>
+                );
+              })}
+            </div>
+            {!selectedSize && (
+              <p style={{ color: 'red' }}>Please select size to continue.</p>
+            )}
           </div>
         </div>
       </div>
       <div className="product-right">
-        <p>Price- </p>
         <p className="product-price">
           <span>INR</span> {total}
         </p>

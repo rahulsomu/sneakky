@@ -10,7 +10,8 @@ import { checkoutActions } from '../actions';
 import BottomBar from './BottomBar';
 const Payment = () => {
   const dispatch = useDispatch();
-  const { userDetails } = useContext(Shoe);
+  // const { userDetails } = useContext(Shoe);
+  const userDetails = useSelector(state => state.userDetails.userDetails);
   const paymentMode = useSelector(state => state.checkoutDetails.paymentMode);
   const paymentModeHandler = e => {
     dispatch(checkoutActions.setPaymentMode(e.target.value));

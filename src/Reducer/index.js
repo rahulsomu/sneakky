@@ -14,12 +14,14 @@ const initialState = {
 };
 
 const initialUserState = {
-  firstName: '',
-  lastName: '',
-  phoneNo: '',
-  addressL1: '',
-  addressL2: '',
-  pincode: '',
+  userDetails: {
+    firstName: null,
+    lastName: null,
+    phoneNo: null,
+    addressL1: null,
+    addressL2: null,
+    pincode: null,
+  },
 };
 
 export const userSlice = createSlice({
@@ -27,7 +29,10 @@ export const userSlice = createSlice({
   initialState: initialUserState,
   reducers: {
     setUserDetails(state, action) {
-      [state] = action.payload;
+      state.userDetails = {
+        ...state.userDetails,
+        [action.payload.name]: action.payload.value,
+      };
     },
   },
 });
@@ -50,9 +55,9 @@ export const checkoutSlice = createSlice({
     setPaymentMode(state, action) {
       state.paymentMode = action.payload;
     },
-    setSize(state,action){
-      state.size=action.payload
-    }
+    setSize(state, action) {
+      state.size = action.payload;
+    },
   },
 });
 

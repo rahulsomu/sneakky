@@ -1,10 +1,8 @@
 import './hero.css';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import {
-  checkoutActions,
-  successMsgActions,
-} from '../actions/index';
+import { checkoutActions, successMsgActions } from '../actions/index';
+import shoeImage from '../assets/shoe.jpg';
 
 const Hero = () => {
   const shoePrice = useSelector(state => state.checkoutDetails.price);
@@ -68,7 +66,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="background">
-        <img src="shoe.jpg" alt="" />
+        <img src={shoeImage} alt="Green Shoe" />
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import './header.css';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { authActions, successMsgActions } from '../actions';
+import logo from '../assets/nike.png';
 const Header = ({ bg }) => {
   const dispatch = useDispatch();
   const cartValue = useSelector(state => state.checkoutDetails.shoeQuantity);
@@ -14,7 +15,7 @@ const Header = ({ bg }) => {
     <div className="header" style={{ background: bg }}>
       <Link to="/">
         <div className="logo">
-          <img src="nike.png" alt="" />
+          <img src={logo} alt="" />
         </div>
       </Link>
 

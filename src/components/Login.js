@@ -1,9 +1,9 @@
 import './login.css';
-import {  useState,useRef } from 'react';
+import { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { authActions } from '../actions/index';
 import { useDispatch, useSelector } from 'react-redux';
-
+import logo from '../assets/nike.png';
 
 import { successMsgActions } from '../actions/index';
 const Login = () => {
@@ -16,7 +16,6 @@ const Login = () => {
   // const {user,setUser}=useContext(Shoe);
   // let username='';
   const isLoggedIn = useSelector(state => state.authentication.isLoggedIn);
-  
 
   const formSubmitHandler = e => {
     e.preventDefault();
@@ -41,7 +40,7 @@ const Login = () => {
         setError('');
         dispatch(authActions.login(email));
         console.log(isLoggedIn);
-        localStorage.setItem('isLoggedIn',isLoggedIn);
+        localStorage.setItem('isLoggedIn', isLoggedIn);
         dispatch(
           successMsgActions.showSuccessMsg({
             msg: 'Login Successful',
@@ -51,7 +50,6 @@ const Login = () => {
         setTimeout(() => {
           dispatch(successMsgActions.hideSuccessMsg());
         }, 3000);
-       
       } else {
         return response.json().then(data => {
           console.log(data);
@@ -65,7 +63,7 @@ const Login = () => {
     <div className="login-page">
       <div className="login-container">
         <div className="login-img">
-          <img src="nike.png" alt="" />
+          <img src={logo} alt="" />
         </div>
 
         <form onSubmit={formSubmitHandler} className="form" method="POST">

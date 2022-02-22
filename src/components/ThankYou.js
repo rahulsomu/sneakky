@@ -10,7 +10,7 @@ import { checkoutActions } from '../actions/index';
 const ThankYou = () => {
   const dispatch = useDispatch();
   const total = useSelector(state => state.checkoutDetails.total);
-  const { userDetails, details } = useContext(Shoe);
+  const userDetails=useSelector(state=>state.userDetails.userDetails)
   const paymentMode=useSelector(state=>state.checkoutDetails.paymentMode)
 
   return (

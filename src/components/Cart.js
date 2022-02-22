@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import BottomBar from './BottomBar';
 
+
 const Cart = () => {
   const total = useSelector(state => state.checkoutDetails.total);
   const shoeQuantity = useSelector(state => state.checkoutDetails.shoeQuantity);
